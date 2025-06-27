@@ -1,4 +1,5 @@
-# Bor3i
+# Flex Programming Language
+
 Welcome to the **Flex Online Compiler**! This is your gateway to learning and using the Flex programming language.
 
 ## Getting Started
