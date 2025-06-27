@@ -1,0 +1,59 @@
+// Number Guessing Game
+
+print("=== Number Guessing Game ===")
+print("I'm thinking of a number between 1 and 100.")
+print("Can you guess what it is?")
+
+// The secret number (in a real game, this would be random)
+secret_number = 42
+
+print("")
+print("Enter your guess:")
+user_input = da5l()
+print("You entered: '{user_input}'")
+
+// Since int() is not implemented, we'll use preset guesses for demonstration
+// This shows how the game logic works with different inputs
+guess = 35  // Example guess for demonstration
+
+print("For this demo, I'll use guess = {guess}")
+
+if (guess == secret_number) {
+    print("🎉 Congratulations! You guessed it!")
+    print("The number was indeed {secret_number}!")
+} else if (guess < secret_number) {
+    print("Too low! The number is higher than {guess}")
+    print("The secret number was {secret_number}")
+} else {
+    print("Too high! The number is lower than {guess}")
+    print("The secret number was {secret_number}")
+}
+
+// Let's also show some analysis
+difference = guess - secret_number
+if (difference < 0) {
+    difference = -difference
+}
+
+print("")
+print("Game Analysis:")
+print("Your guess: {guess}")
+print("Secret number: {secret_number}")
+print("Difference: {difference}")
+
+if (difference == 0) {
+    print("Perfect! Exact match!")
+} else if (difference <= 5) {
+    print("Very close! You were within 5 numbers.")
+} else if (difference <= 10) {
+    print("Close! You were within 10 numbers.")
+} else if (difference <= 20) {
+    print("Not bad! You were within 20 numbers.")
+} else {
+    print("Keep practicing! You were off by {difference} numbers.")
+}
+
+print("")
+print("Thanks for playing the guessing game!")
+print("Note: int() function is not yet implemented in Flex")
+print("Try running this again to see the game logic!") 

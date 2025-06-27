@@ -1,0 +1,11 @@
+// Test case for output before input issue
+print("=== Output Before Input Test ===")
+print("This should be visible BEFORE the input request")
+print("Line 1: Hello World")
+print("Line 2: Testing output display")
+print("Line 3: About to request input...")
+print("")
+print("Please enter your name:")
+name = da5l()
+print("You entered: {name}")
+print("Test completed successfully!") 

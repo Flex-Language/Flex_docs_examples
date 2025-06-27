@@ -1,0 +1,17 @@
+// Simple Input Test - Fixed Version
+print("=== Simple Input Test ===")
+print("This output should appear BEFORE input request")
+print("Line 1: Hello")
+print("Line 2: World")
+print("Line 3: About to ask for input...")
+
+print("Please enter your name:")
+name = da5l()
+print("You entered: {name}")
+
+print("Please enter a number:")
+number = da5l()
+print("You entered: {number}")
+
+print("Test completed successfully!")
+print("Both outputs and inputs should work properly now.") 

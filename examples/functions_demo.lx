@@ -1,0 +1,101 @@
+// Functions Demonstration
+
+print("=== Flex Functions Demo ===")
+
+// Helper function for modulo operation (since % is not implemented)
+function mod(a, b) {
+    // Simple approach: keep subtracting b from a until a < b
+    remainder = a
+    while (remainder >= b) {
+        remainder = remainder - b
+    }
+    return remainder
+}
+
+// Function without parameters
+function greet() {
+    print("Hello from a function!")
+}
+
+// Function with parameters and return value
+function add(a, b) {
+    return a + b
+}
+
+// Function with multiple parameters
+function calculate_area(width, height) {
+    area = width * height
+    print("Rectangle area: {width} x {height} = {area}")
+    return area
+}
+
+// Function for factorial calculation
+function factorial(n) {
+    if (n <= 1) {
+        return 1
+    }
+    result = 1
+    for (i = 2; i <= n; i++) {
+        result = result * i
+    }
+    return result
+}
+
+// Function to check if number is prime
+function is_prime(num) {
+    if (num < 2) {
+        return false
+    }
+    for (i = 2; i < num; i++) {
+        if (mod(num, i) == 0) {
+            return false
+        }
+    }
+    return true
+}
+
+// Test the functions
+print("")
+print("1. Simple function call:")
+greet()
+
+print("")
+print("2. Function with return value:")
+sum = add(15, 25)
+print("15 + 25 = {sum}")
+
+print("")
+print("3. Function with multiple parameters:")
+area = calculate_area(8, 6)
+
+print("")
+print("4. Factorial calculation:")
+print("Enter a number for factorial:")
+user_input = da5l()
+print("You entered: {user_input}")
+
+// Use preset number for demo (since int() is not implemented)
+num = 5
+print("For this demo, calculating factorial of {num}:")
+fact = factorial(num)
+print("Factorial of {num} is {fact}")
+
+print("")
+print("5. Prime number checker:")
+print("Enter a number to check if it's prime:")
+user_input2 = da5l()
+print("You entered: {user_input2}")
+
+// Use preset number for demo
+test_num = 17
+print("For this demo, checking if {test_num} is prime:")
+if (is_prime(test_num)) {
+    print("{test_num} is a prime number!")
+} else {
+    print("{test_num} is not a prime number.")
+}
+
+print("")
+print("Note: int() function is not yet implemented in Flex")
+print("This demo uses preset numbers to show function capabilities")
+print("Functions demonstration complete!") 

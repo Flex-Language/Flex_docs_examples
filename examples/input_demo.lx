@@ -1,0 +1,58 @@
+# Flex Input Demonstration Program
+
+print("Welcome to the Flex Input Demo!")
+print("This program shows how to use both input() and da5l() functions to get user input.")
+print("-------------------------------------------")
+
+# Using da5l()
+print("What is your name? (using da5l)")
+name = da5l()
+print("Hello, {name}! Nice to meet you.")
+
+# Using input()
+print("")
+print("What is your age? (using input)")
+age_str = input()
+
+# String validation (since int() is not implemented)
+if (age_str.isdigit()) {
+    print("You entered a valid number: {age_str}")
+    
+    # Simple age comparison using strings (demo purposes)
+    # Note: int() is not implemented in current Flex version
+    if (age_str == "17") {
+        print("You appear to be a minor (age 17).")
+    } else if (age_str == "16") {
+        print("You appear to be a minor (age 16).")
+    } else if (age_str == "15") {
+        print("You appear to be a minor (age 15).")
+    } else {
+        print("Age received: {age_str}")
+    }
+} else {
+    print("Invalid age input: '{age_str}' is not a number")
+}
+
+# Area calculation example (using preset values since int() doesn't work)
+print("")
+print("Let's demonstrate area calculation:")
+print("Enter width (using da5l):")
+width_str = da5l()
+print("You entered width: {width_str}")
+
+print("Enter height (using input):")
+height_str = input()
+print("You entered height: {height_str}")
+
+# For demo purposes, use preset numeric values
+width = 8
+height = 6
+area = width * height
+
+print("Demo calculation with width={width}, height={height}:")
+print("The area of the rectangle is: {area} square units")
+
+print("")
+print("Thank you for testing the input functions!")
+print("Note: Type conversion (int, float) is not yet implemented in Flex")
+print("This demo shows string input validation and processing.") 
